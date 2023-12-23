@@ -11,5 +11,22 @@ class AppTheme {
           centerTitle: true,
           elevation: 0),
       textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(foregroundColor: primary)));
+          style: TextButton.styleFrom(foregroundColor: primary)),
+      inputDecorationTheme: const InputDecorationTheme(
+        floatingLabelStyle: TextStyle(color: primary),
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary),
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                topRight: Radius.circular(10))),
+        focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary),
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                topRight: Radius.circular(10))),
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                topRight: Radius.circular(10))),
+      ));
 }
